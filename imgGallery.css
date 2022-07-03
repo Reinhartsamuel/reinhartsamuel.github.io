@@ -1,0 +1,36 @@
+body{
+    font-family: sans-serif;
+}
+h1{
+    text-align:center;
+    color: darkblue;
+    margin: 30px 0 50px;
+}
+#small{
+    font-size: 20px;
+}
+.gallery{
+    margin:3px 46px;
+    padding-top:50px ;
+    margin-left: 132px;
+}
+
+.gallery img{
+    width: 230px;
+    height: 160px;
+    padding: 6px;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+.gallery img:hover{
+    filter: grayscale(0);
+    transform: scale(1.16);
+}
+button{
+    height: 50px;
+    width: 150px;
+}
+button:hover{
+    transform: scale(1.16);
+}

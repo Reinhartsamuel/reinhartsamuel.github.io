@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="imgGallery.css" />
+    <link rel="stylesheet" href="lightbox.min.css" />
+     <!--Bootstrap CSS-->
+     <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+     crossorigin="anonymous"/>
+   <!--My CSS-->
+   <link rel="stylesheet" href="style.css" />
+ </head>
+
+ <body>
+ <!--navbar-->
+   <nav class="navbar navbar-expand-md  navbar-light">
+     <div class="container">
+       <a class="navbar-brand" href="#">Reinhart Samuel</a>
+       <button
+         class="navbar-toggler"
+         type="button"
+         data-bs-toggle="collapse"
+         data-bs-target="#navbarNav"
+         aria-controls="navbarNav"
+         aria-expanded="false"
+         aria-label="Toggle navigation"
+       >
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav ms-auto">
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="index.html">About</a>
+           </li>
+           <li class="nav-item dropdown">
+             <a
+               class="nav-link dropdown-toggle"
+               href="#"
+               id="navbarDropdown"
+               role="button"
+               data-toggle="dropdown"
+               aria-expanded="false"
+             >
+               Projects
+             </a>
+             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+               <a class="dropdown-item" href="projects.html">See My Projects</a>
+               <div class="dropdown-divider"></div>
+               <a class="dropdown-item" href="#">Importir.org</a>
+               <a class="dropdown-item" href="#">HTML5 CSS3</a>
+               <a class="dropdown-item" href="#">Portofolio</a>
+               <a class="dropdown-item" href="#">project 4</a>
+             </div>
+             <li class="nav-item">
+               <a class="nav-link" href="image gallery.html">Gallery</a>
+             </li>
+           </li>
+
+           <li class="nav-item">
+             <a class="nav-link" href="index.html">Contacts</a>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </nav>
+   <!--akhir navbar-->
+<br><br><br><br>
+    <h1>My Gallery</h1>
+    <h1 id="small">Click on the pictures!</h1>
+    <div class="gallery">
+      <a href="img/city fhd.jpg" data-lightbox="mygallery"
+        ><img src="img/city hd.jpg" alt=""
+      /></a>
+      <a href="img/LpsuaFolklore.JPG" onclick="findMe()" data-lightbox="mygallery"
+        ><img src="img/LpsuaFolklore.JPG" alt=""
+      /></a>
+      <a href="img/me candid.JPG" data-lightbox="mygallery"
+        ><img src="img/me candid.JPG" alt=""
+      /></a>
+      <a href="img/Me istana raja.JPG" data-lightbox="mygallery"
+        ><img src="img/Me istana raja.JPG" alt=""
+      /></a>
+      <a href="img/Me square.jpeg" data-lightbox="mygallery"
+        ><img src="img/Me square.jpeg" alt=""
+      /></a>
+      <a href="img/Me taito.JPG" data-lightbox="mygallery"
+        ><img src="img/Me taito.JPG" alt=""
+      /></a>
+      <a href="img/Prambanan.jpg" data-lightbox="mygallery"
+        ><img src="img/Prambanan.jpg" alt=""
+      /></a>
+      <a href="img/tokyo fullsquad.JPG" onclick="findMe()" data-lightbox="mygallery"
+        ><img src="img/tokyo fullsquad.JPG" alt=""
+      /></a>
+      <a href="img/vp.jpg" onclick="findMe()" data-lightbox="mygallery"
+        ><img src="img/vp.jpg" alt=""
+      /></a>
+      <a href="img/prambanan again.JPG" data-lightbox="mygallery"
+        ><img src="img/prambanan again.JPG" alt=""
+      /></a>
+    </div>
+
+    <script src="lightbox-plus-jquery.min.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+      
+    <script>
+      const messageBtn = document.getElementById('showMessage');
+      messageBtn.addEventListener('click', function(){
+        setTimeout(function (){
+            alert ('test successful');
+        },500)
+      })
+
+      function findMe(){
+        setTimeout(function(){
+          alert('Find me if You can!!');
+        }, 1800)
+      }
+      messageBtn.addEventListener('')
+    </script>
+  
+  </body>
+</html>
